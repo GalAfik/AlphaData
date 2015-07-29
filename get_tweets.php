@@ -1,14 +1,19 @@
 <?php
 
+header('Content-Type: application/json');
+
+// Report all PHP errors
+error_reporting(-1);
+
 require_once('twitter_proxy.php');
 
 // Twitter OAuth Config options
-$oauth_access_token = 'your-token-here';
-$oauth_access_token_secret = 'your-token-secret';
-$consumer_key = 'your-api-key';
-$consumer_secret = 'your-api-secret';
-$user_id = '78884300';
-$screen_name = 'parallax';
+$oauth_access_token = '2789400909-G93OkuDFBJjt58XIlLBfeqwA5bwpmyAIOPZ5HhL';
+$oauth_access_token_secret = 'ToPwwK3MxvUWno2jd7LC3PRVXlTA6jY9AcHZ5wcurNVJs';
+$consumer_key = 'oX02veTTdaEUgwNtyP2Bm73aV';
+$consumer_secret = 'geI2pHMR604aJjqjLYVyEGtgrjCdIcixelZkDyMxEX4Ethm9w5';
+$user_id = '2789400909';
+$screen_name = 'afikdesigns';
 $count = 5;
 
 $twitter_url = 'statuses/user_timeline.json';

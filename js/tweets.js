@@ -5,11 +5,15 @@ $(function(){
 		type: 'GET',
 		success: function(response) {
 
+
+
+			console.log(response);
+
 			if (typeof response.errors === 'undefined' || response.errors.length < 1) {
 				
 				var $tweets = $('<ul></ul>');
 				$.each(response, function(i, obj) {
-					$tweets.append('<li>' + obj.text + '</li>');
+					$tweets.append('<li>' + JSON.stringify(obj, null, '   ') + '</li>');
 				});
 
 				$('.tweets-container').html($tweets);
